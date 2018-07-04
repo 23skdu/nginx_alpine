@@ -1,6 +1,6 @@
 #This container runs nginx and crons from /etc/cron.d
 #with perl,fcgi, and some very handy automation perl modules
-FROM alpine:3.4
+FROM alpine:3.6
 
 RUN echo "http://dl-6.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk --update upgrade && \
